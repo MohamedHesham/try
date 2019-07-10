@@ -1,0 +1,292 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "version" : "1.0",
+    "title" : "DOFPayableService"
+  },
+  "host" : "stage-api.abudhabi.ae",
+  "basePath" : "/ws/DOFPayableService/1.0",
+  "schemes" : [ "https" ],
+  "security" : [ {
+    "apiKey" : [ ]
+  } ],
+  "paths" : {
+    "/GetSupplierBank" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetSupplierBank xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_TYPE>string</VENDOR_TYPE>\n  </arg0>\n</ap:GetSupplierBank>",
+            "application/json" : "{\"GetSupplierBank\":{\"arg0\":{\"VENDOR_NUMBER\":\"string\",\"VENDOR_TYPE\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetSupplierBankResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <BANK_ACCOUNT_NAME>string</BANK_ACCOUNT_NAME>\n    <!--Optional:-->\n    <BANK_ACCOUNT_NUM>string</BANK_ACCOUNT_NUM>\n    <!--Optional:-->\n    <BANK_ID>string</BANK_ID>\n    <!--Optional:-->\n    <BANK_NAME>string</BANK_NAME>\n    <!--Optional:-->\n    <BRANCH_ID>string</BRANCH_ID>\n    <!--Optional:-->\n    <BRANCH_NAME>string</BRANCH_NAME>\n    <!--Optional:-->\n    <EXT_BANK_ACCOUNT_ID>string</EXT_BANK_ACCOUNT_ID>\n    <!--Optional:-->\n    <IBAN>string</IBAN>\n    <!--Optional:-->\n    <VENDOR_ID>string</VENDOR_ID>\n    <!--Optional:-->\n    <VENDOR_NAME>string</VENDOR_NAME>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_TYPE>string</VENDOR_TYPE>\n  </return>\n</ap:GetSupplierBankResponse>",
+              "application/json" : "{\"GetSupplierBankResponse\":{\"return\":{\"BANK_ACCOUNT_NAME\":\"string\",\"BANK_ACCOUNT_NUM\":\"string\",\"BANK_ID\":\"string\",\"BANK_NAME\":\"string\",\"BRANCH_ID\":\"string\",\"BRANCH_NAME\":\"string\",\"EXT_BANK_ACCOUNT_ID\":\"string\",\"IBAN\":\"string\",\"VENDOR_ID\":\"string\",\"VENDOR_NAME\":\"string\",\"VENDOR_NUMBER\":\"string\",\"VENDOR_TYPE\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/GetPFAIMSDetails" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetPFAIMSDetails xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <FROM_DATE>string</FROM_DATE>\n    <!--Optional:-->\n    <TO_DATE>string</TO_DATE>\n    <!--Optional:-->\n    <TRIP_ID>string</TRIP_ID>\n  </arg0>\n</ap:GetPFAIMSDetails>",
+            "application/json" : "{\"GetPFAIMSDetails\":{\"arg0\":{\"FROM_DATE\":\"string\",\"TO_DATE\":\"string\",\"TRIP_ID\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetPFAIMSDetailsResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <AIRCRAFT>string</AIRCRAFT>\n    <!--Optional:-->\n    <BLOCK_IN>string</BLOCK_IN>\n    <!--Optional:-->\n    <BLOCK_OUT>string</BLOCK_OUT>\n    <!--Optional:-->\n    <BLOCK_TIME_HT>string</BLOCK_TIME_HT>\n    <!--Optional:-->\n    <CAT1>string</CAT1>\n    <!--Optional:-->\n    <CREATION_DATE>string</CREATION_DATE>\n    <!--Optional:-->\n    <CREW_ID_1>string</CREW_ID_1>\n    <!--Optional:-->\n    <CREW_ID_10>string</CREW_ID_10>\n    <!--Optional:-->\n    <CREW_ID_11>string</CREW_ID_11>\n    <!--Optional:-->\n    <CREW_ID_12>string</CREW_ID_12>\n    <!--Optional:-->\n    <CREW_ID_13>string</CREW_ID_13>\n    <!--Optional:-->\n    <CREW_ID_14>string</CREW_ID_14>\n    <!--Optional:-->\n    <CREW_ID_15>string</CREW_ID_15>\n    <!--Optional:-->\n    <CREW_ID_16>string</CREW_ID_16>\n    <!--Optional:-->\n    <CREW_ID_17>string</CREW_ID_17>\n    <!--Optional:-->\n    <CREW_ID_18>string</CREW_ID_18>\n    <!--Optional:-->\n    <CREW_ID_19>string</CREW_ID_19>\n    <!--Optional:-->\n    <CREW_ID_2>string</CREW_ID_2>\n    <!--Optional:-->\n    <CREW_ID_20>string</CREW_ID_20>\n    <!--Optional:-->\n    <CREW_ID_21>string</CREW_ID_21>\n    <!--Optional:-->\n    <CREW_ID_22>string</CREW_ID_22>\n    <!--Optional:-->\n    <CREW_ID_23>string</CREW_ID_23>\n    <!--Optional:-->\n    <CREW_ID_24>string</CREW_ID_24>\n    <!--Optional:-->\n    <CREW_ID_25>string</CREW_ID_25>\n    <!--Optional:-->\n    <CREW_ID_26>string</CREW_ID_26>\n    <!--Optional:-->\n    <CREW_ID_27>string</CREW_ID_27>\n    <!--Optional:-->\n    <CREW_ID_28>string</CREW_ID_28>\n    <!--Optional:-->\n    <CREW_ID_29>string</CREW_ID_29>\n    <!--Optional:-->\n    <CREW_ID_3>string</CREW_ID_3>\n    <!--Optional:-->\n    <CREW_ID_30>string</CREW_ID_30>\n    <!--Optional:-->\n    <CREW_ID_4>string</CREW_ID_4>\n    <!--Optional:-->\n    <CREW_ID_5>string</CREW_ID_5>\n    <!--Optional:-->\n    <CREW_ID_6>string</CREW_ID_6>\n    <!--Optional:-->\n    <CREW_ID_7>string</CREW_ID_7>\n    <!--Optional:-->\n    <CREW_ID_8>string</CREW_ID_8>\n    <!--Optional:-->\n    <CREW_ID_9>string</CREW_ID_9>\n    <!--Optional:-->\n    <CREW_NO>string</CREW_NO>\n    <!--Optional:-->\n    <FLIGHT_HOURS>string</FLIGHT_HOURS>\n    <!--Optional:-->\n    <FUEL_FUELER>string</FUEL_FUELER>\n    <!--Optional:-->\n    <FUEL_PURCH_DATE>string</FUEL_PURCH_DATE>\n    <!--Optional:-->\n    <FUEL_QTY>string</FUEL_QTY>\n    <!--Optional:-->\n    <FUEL_VENDOR>string</FUEL_VENDOR>\n    <!--Optional:-->\n    <LEG>string</LEG>\n    <!--Optional:-->\n    <PAX>string</PAX>\n    <!--Optional:-->\n    <POA>string</POA>\n    <!--Optional:-->\n    <POD>string</POD>\n    <!--Optional:-->\n    <POD_LK_DATE>string</POD_LK_DATE>\n    <!--Optional:-->\n    <TRIP_ID>string</TRIP_ID>\n  </return>\n</ap:GetPFAIMSDetailsResponse>",
+              "application/json" : "{\"GetPFAIMSDetailsResponse\":{\"return\":{\"AIRCRAFT\":\"string\",\"BLOCK_IN\":\"string\",\"BLOCK_OUT\":\"string\",\"BLOCK_TIME_HT\":\"string\",\"CAT1\":\"string\",\"CREATION_DATE\":\"string\",\"CREW_ID_1\":\"string\",\"CREW_ID_10\":\"string\",\"CREW_ID_11\":\"string\",\"CREW_ID_12\":\"string\",\"CREW_ID_13\":\"string\",\"CREW_ID_14\":\"string\",\"CREW_ID_15\":\"string\",\"CREW_ID_16\":\"string\",\"CREW_ID_17\":\"string\",\"CREW_ID_18\":\"string\",\"CREW_ID_19\":\"string\",\"CREW_ID_2\":\"string\",\"CREW_ID_20\":\"string\",\"CREW_ID_21\":\"string\",\"CREW_ID_22\":\"string\",\"CREW_ID_23\":\"string\",\"CREW_ID_24\":\"string\",\"CREW_ID_25\":\"string\",\"CREW_ID_26\":\"string\",\"CREW_ID_27\":\"string\",\"CREW_ID_28\":\"string\",\"CREW_ID_29\":\"string\",\"CREW_ID_3\":\"string\",\"CREW_ID_30\":\"string\",\"CREW_ID_4\":\"string\",\"CREW_ID_5\":\"string\",\"CREW_ID_6\":\"string\",\"CREW_ID_7\":\"string\",\"CREW_ID_8\":\"string\",\"CREW_ID_9\":\"string\",\"CREW_NO\":\"string\",\"FLIGHT_HOURS\":\"string\",\"FUEL_FUELER\":\"string\",\"FUEL_PURCH_DATE\":\"string\",\"FUEL_QTY\":\"string\",\"FUEL_VENDOR\":\"string\",\"LEG\":\"string\",\"PAX\":\"string\",\"POA\":\"string\",\"POD\":\"string\",\"POD_LK_DATE\":\"string\",\"TRIP_ID\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/RemoveInvoiceDetails" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:RemoveInvoiceDetails xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <INVOICE_NUM>string</INVOICE_NUM>\n  </arg0>\n</ap:RemoveInvoiceDetails>",
+            "application/json" : "{\"RemoveInvoiceDetails\":{\"arg0\":{\"GROUP_ID\":\"string\",\"INVOICE_NUM\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:RemoveInvoiceDetailsResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <ERROR_CODE>string</ERROR_CODE>\n    <!--Optional:-->\n    <ERROR_MESSAGE>string</ERROR_MESSAGE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <LINE_NO>string</LINE_NO>\n    <!--Optional:-->\n    <TRANSACTION_NUMBER>string</TRANSACTION_NUMBER>\n  </return>\n</ap:RemoveInvoiceDetailsResponse>",
+              "application/json" : "{\"RemoveInvoiceDetailsResponse\":{\"return\":{\"ERROR_CODE\":\"string\",\"ERROR_MESSAGE\":\"string\",\"GROUP_ID\":\"string\",\"LINE_NO\":\"string\",\"TRANSACTION_NUMBER\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/GetInvoicePaymentDetails" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetInvoicePaymentDetails xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <CHECK_NUM>string</CHECK_NUM>\n    <!--Optional:-->\n    <FROM_DATE>string</FROM_DATE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <INVOICE_NUM>string</INVOICE_NUM>\n    <!--Optional:-->\n    <SOURCE>string</SOURCE>\n    <!--Optional:-->\n    <TO_DATE>string</TO_DATE>\n    <!--Optional:-->\n    <VENDOR_NUM>string</VENDOR_NUM>\n    <!--Optional:-->\n    <VOUCHER_NUM>string</VOUCHER_NUM>\n  </arg0>\n</ap:GetInvoicePaymentDetails>",
+            "application/json" : "{\"GetInvoicePaymentDetails\":{\"arg0\":{\"CHECK_NUM\":\"string\",\"FROM_DATE\":\"string\",\"GROUP_ID\":\"string\",\"INVOICE_NUM\":\"string\",\"SOURCE\":\"string\",\"TO_DATE\":\"string\",\"VENDOR_NUM\":\"string\",\"VOUCHER_NUM\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetInvoicePaymentDetailsResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <AMOUNT_PAID>string</AMOUNT_PAID>\n    <!--Optional:-->\n    <CHECK_DATE>string</CHECK_DATE>\n    <!--Optional:-->\n    <CHECK_NUMBER>string</CHECK_NUMBER>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <INVOICE_AMOUNT>string</INVOICE_AMOUNT>\n    <!--Optional:-->\n    <INVOICE_CURRENCY_CODE>string</INVOICE_CURRENCY_CODE>\n    <!--Optional:-->\n    <INVOICE_DATE>string</INVOICE_DATE>\n    <!--Optional:-->\n    <INVOICE_ID>string</INVOICE_ID>\n    <!--Optional:-->\n    <INVOICE_NUM>string</INVOICE_NUM>\n    <!--Optional:-->\n    <INVOICE_TYPE_LOOKUP_CODE>string</INVOICE_TYPE_LOOKUP_CODE>\n    <!--Optional:-->\n    <PAYMENT_RECON_STATUS>string</PAYMENT_RECON_STATUS>\n    <!--Optional:-->\n    <PAYMENT_STATUS>string</PAYMENT_STATUS>\n    <!--Optional:-->\n    <SOURCE>string</SOURCE>\n    <!--Optional:-->\n    <VALIDATION_STATUS>string</VALIDATION_STATUS>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_SITE_CODE>string</VENDOR_SITE_CODE>\n    <!--Optional:-->\n    <VOUCHER_NUM>string</VOUCHER_NUM>\n  </return>\n</ap:GetInvoicePaymentDetailsResponse>",
+              "application/json" : "{\"GetInvoicePaymentDetailsResponse\":{\"return\":{\"AMOUNT_PAID\":\"string\",\"CHECK_DATE\":\"string\",\"CHECK_NUMBER\":\"string\",\"GROUP_ID\":\"string\",\"INVOICE_AMOUNT\":\"string\",\"INVOICE_CURRENCY_CODE\":\"string\",\"INVOICE_DATE\":\"string\",\"INVOICE_ID\":\"string\",\"INVOICE_NUM\":\"string\",\"INVOICE_TYPE_LOOKUP_CODE\":\"string\",\"PAYMENT_RECON_STATUS\":\"string\",\"PAYMENT_STATUS\":\"string\",\"SOURCE\":\"string\",\"VALIDATION_STATUS\":\"string\",\"VENDOR_NUMBER\":\"string\",\"VENDOR_SITE_CODE\":\"string\",\"VOUCHER_NUM\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/APInvoiceData" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:APInvoiceData xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Zero or more repetitions:-->\n    <APInvoiceHeader>\n      <!--Optional:-->\n      <ACCTS_PAY_CC_ID>string</ACCTS_PAY_CC_ID>\n      <!--Zero or more repetitions:-->\n      <APInvoiceLine>\n        <!--Optional:-->\n        <ACCOUNTING_DATE>string</ACCOUNTING_DATE>\n        <!--Optional:-->\n        <ACCOUNT_SEGMENT>string</ACCOUNT_SEGMENT>\n        <!--Optional:-->\n        <AMOUNT>string</AMOUNT>\n        <!--Optional:-->\n        <AMOUNT_INCLUDES_TAX_FLAG>string</AMOUNT_INCLUDES_TAX_FLAG>\n        <!--Optional:-->\n        <ASSESSABLE_VALUE>string</ASSESSABLE_VALUE>\n        <!--Optional:-->\n        <ASSETS_TRACKING_FLAG>string</ASSETS_TRACKING_FLAG>\n        <!--Optional:-->\n        <ASSET_BOOK_TYPE_CODE>string</ASSET_BOOK_TYPE_CODE>\n        <!--Optional:-->\n        <ASSET_CATEGORY_ID>string</ASSET_CATEGORY_ID>\n        <!--Optional:-->\n        <ATTRIBUTE1>string</ATTRIBUTE1>\n        <!--Optional:-->\n        <ATTRIBUTE10>string</ATTRIBUTE10>\n        <!--Optional:-->\n        <ATTRIBUTE11>string</ATTRIBUTE11>\n        <!--Optional:-->\n        <ATTRIBUTE12>string</ATTRIBUTE12>\n        <!--Optional:-->\n        <ATTRIBUTE13>string</ATTRIBUTE13>\n        <!--Optional:-->\n        <ATTRIBUTE14>string</ATTRIBUTE14>\n        <!--Optional:-->\n        <ATTRIBUTE15>string</ATTRIBUTE15>\n        <!--Optional:-->\n        <ATTRIBUTE2>string</ATTRIBUTE2>\n        <!--Optional:-->\n        <ATTRIBUTE3>string</ATTRIBUTE3>\n        <!--Optional:-->\n        <ATTRIBUTE4>string</ATTRIBUTE4>\n        <!--Optional:-->\n        <ATTRIBUTE5>string</ATTRIBUTE5>\n        <!--Optional:-->\n        <ATTRIBUTE6>string</ATTRIBUTE6>\n        <!--Optional:-->\n        <ATTRIBUTE7>string</ATTRIBUTE7>\n        <!--Optional:-->\n        <ATTRIBUTE8>string</ATTRIBUTE8>\n        <!--Optional:-->\n        <ATTRIBUTE9>string</ATTRIBUTE9>\n        <!--Optional:-->\n        <ATTRIBUTE_CATEGORY>string</ATTRIBUTE_CATEGORY>\n        <!--Optional:-->\n        <AWT_GROUP_NAME>string</AWT_GROUP_NAME>\n        <!--Optional:-->\n        <BALANCING_SEGMENT>string</BALANCING_SEGMENT>\n        <!--Optional:-->\n        <CONTROL_AMOUNT>string</CONTROL_AMOUNT>\n        <!--Optional:-->\n        <COST_CENTER_SEGMENT>string</COST_CENTER_SEGMENT>\n        <!--Optional:-->\n        <COST_FACTOR_NAME>string</COST_FACTOR_NAME>\n        <!--Optional:-->\n        <DEFAULT_DIST_CCID>string</DEFAULT_DIST_CCID>\n        <!--Optional:-->\n        <DESCRIPTION>string</DESCRIPTION>\n        <!--Optional:-->\n        <DISTRIBUTION_SET_NAME>string</DISTRIBUTION_SET_NAME>\n        <!--Optional:-->\n        <DIST_CODE_CONCATENATED>string</DIST_CODE_CONCATENATED>\n        <!--Optional:-->\n        <EXPENDITURE_ITEM_DATE>string</EXPENDITURE_ITEM_DATE>\n        <!--Optional:-->\n        <EXPENDITURE_ORGANIZATION_ID>string</EXPENDITURE_ORGANIZATION_ID>\n        <!--Optional:-->\n        <EXPENDITURE_TYPE>string</EXPENDITURE_TYPE>\n        <!--Optional:-->\n        <FINAL_MATCH_FLAG>string</FINAL_MATCH_FLAG>\n        <!--Optional:-->\n        <INCL_IN_TAXABLE_LINE_FLAG>string</INCL_IN_TAXABLE_LINE_FLAG>\n        <!--Optional:-->\n        <INVOICE_ID>string</INVOICE_ID>\n        <!--Optional:-->\n        <INVOICE_LINE_ID>string</INVOICE_LINE_ID>\n        <!--Optional:-->\n        <ITEM_DESCRIPTION>string</ITEM_DESCRIPTION>\n        <!--Optional:-->\n        <LINE_GROUP_NUMBER>string</LINE_GROUP_NUMBER>\n        <!--Optional:-->\n        <LINE_NUMBER>string</LINE_NUMBER>\n        <!--Optional:-->\n        <LINE_TYPE_LOOKUP_CODE>string</LINE_TYPE_LOOKUP_CODE>\n        <!--Optional:-->\n        <MATCH_OPTION>string</MATCH_OPTION>\n        <!--Optional:-->\n        <OPERATION>string</OPERATION>\n        <!--Optional:-->\n        <PA_ADDITION_FLAG>string</PA_ADDITION_FLAG>\n        <!--Optional:-->\n        <PA_QUANTITY>string</PA_QUANTITY>\n        <!--Optional:-->\n        <PO_DISTRIBUTION_NUM>string</PO_DISTRIBUTION_NUM>\n        <!--Optional:-->\n        <PO_LINE_NUMBER>string</PO_LINE_NUMBER>\n        <!--Optional:-->\n        <PO_NUMBER>string</PO_NUMBER>\n        <!--Optional:-->\n        <PO_SHIPMENT_NUM>string</PO_SHIPMENT_NUM>\n        <!--Optional:-->\n        <PO_UNIT_OF_MEASURE>string</PO_UNIT_OF_MEASURE>\n        <!--Optional:-->\n        <PRIMARY_INTENDED_USE>string</PRIMARY_INTENDED_USE>\n        <!--Optional:-->\n        <PROJECT_ACCOUNTING_CONTEXT>string</PROJECT_ACCOUNTING_CONTEXT>\n        <!--Optional:-->\n        <PROJECT_NAME>string</PROJECT_NAME>\n        <!--Optional:-->\n        <PROJECT_NUMBER>string</PROJECT_NUMBER>\n        <!--Optional:-->\n        <PRORATE_ACROSS_FLAG>string</PRORATE_ACROSS_FLAG>\n        <!--Optional:-->\n        <PURCHASING_CATEGORY>string</PURCHASING_CATEGORY>\n        <!--Optional:-->\n        <PURCHASING_CATEGORY_ID>string</PURCHASING_CATEGORY_ID>\n        <!--Optional:-->\n        <QUANTITY_INVOICED>string</QUANTITY_INVOICED>\n        <!--Optional:-->\n        <RECEIPT_LINE_NUMBER>string</RECEIPT_LINE_NUMBER>\n        <!--Optional:-->\n        <RECEIPT_NUMBER>string</RECEIPT_NUMBER>\n        <!--Optional:-->\n        <RELEASE_NUM>string</RELEASE_NUM>\n        <!--Optional:-->\n        <REQUESTER_EMPLOYEE_NUM>string</REQUESTER_EMPLOYEE_NUM>\n        <!--Optional:-->\n        <REQUESTER_FIRST_NAME>string</REQUESTER_FIRST_NAME>\n        <!--Optional:-->\n        <REQUESTER_ID>string</REQUESTER_ID>\n        <!--Optional:-->\n        <REQUESTER_LAST_NAME>string</REQUESTER_LAST_NAME>\n        <!--Optional:-->\n        <SHIP_TO_LOCATION_CODE>string</SHIP_TO_LOCATION_CODE>\n        <!--Optional:-->\n        <SHIP_TO_LOCATION_ID>string</SHIP_TO_LOCATION_ID>\n        <!--Optional:-->\n        <SOURCE_SYSTEM>string</SOURCE_SYSTEM>\n        <!--Optional:-->\n        <TASK_NAME>string</TASK_NAME>\n        <!--Optional:-->\n        <TASK_NUMBER>string</TASK_NUMBER>\n        <!--Optional:-->\n        <TAX_CODE>string</TAX_CODE>\n        <!--Optional:-->\n        <TAX_RATE_CODE>string</TAX_RATE_CODE>\n        <!--Optional:-->\n        <UNIT_PRICE>string</UNIT_PRICE>\n      </APInvoiceLine>\n      <!--Optional:-->\n      <ATTRIBUTE1>string</ATTRIBUTE1>\n      <!--Optional:-->\n      <ATTRIBUTE10>string</ATTRIBUTE10>\n      <!--Optional:-->\n      <ATTRIBUTE11>string</ATTRIBUTE11>\n      <!--Optional:-->\n      <ATTRIBUTE12>string</ATTRIBUTE12>\n      <!--Optional:-->\n      <ATTRIBUTE13>string</ATTRIBUTE13>\n      <!--Optional:-->\n      <ATTRIBUTE14>string</ATTRIBUTE14>\n      <!--Optional:-->\n      <ATTRIBUTE15>string</ATTRIBUTE15>\n      <!--Optional:-->\n      <ATTRIBUTE2>string</ATTRIBUTE2>\n      <!--Optional:-->\n      <ATTRIBUTE3>string</ATTRIBUTE3>\n      <!--Optional:-->\n      <ATTRIBUTE4>string</ATTRIBUTE4>\n      <!--Optional:-->\n      <ATTRIBUTE5>string</ATTRIBUTE5>\n      <!--Optional:-->\n      <ATTRIBUTE6>string</ATTRIBUTE6>\n      <!--Optional:-->\n      <ATTRIBUTE7>string</ATTRIBUTE7>\n      <!--Optional:-->\n      <ATTRIBUTE8>string</ATTRIBUTE8>\n      <!--Optional:-->\n      <ATTRIBUTE9>string</ATTRIBUTE9>\n      <!--Optional:-->\n      <ATTRIBUTE_CATEGORY>string</ATTRIBUTE_CATEGORY>\n      <!--Optional:-->\n      <AWT_GROUP_NAME>string</AWT_GROUP_NAME>\n      <!--Optional:-->\n      <BATCH_ID>string</BATCH_ID>\n      <!--Optional:-->\n      <DESCRIPTION>string</DESCRIPTION>\n      <!--Optional:-->\n      <DOC_CATEGORY_CODE>string</DOC_CATEGORY_CODE>\n      <!--Optional:-->\n      <EXCHANGE_DATE>string</EXCHANGE_DATE>\n      <!--Optional:-->\n      <EXCHANGE_RATE>string</EXCHANGE_RATE>\n      <!--Optional:-->\n      <EXCHANGE_RATE_TYPE>string</EXCHANGE_RATE_TYPE>\n      <!--Optional:-->\n      <EXTERNAL_BANK_ACCOUNT_NUM>string</EXTERNAL_BANK_ACCOUNT_NUM>\n      <!--Optional:-->\n      <GL_DATE>string</GL_DATE>\n      <!--Optional:-->\n      <GOODS_RECEIVED_DATE>string</GOODS_RECEIVED_DATE>\n      <!--Optional:-->\n      <GROUP_ID>string</GROUP_ID>\n      <!--Optional:-->\n      <INVOICE_AMOUNT>string</INVOICE_AMOUNT>\n      <!--Optional:-->\n      <INVOICE_CURRENCY_CODE>string</INVOICE_CURRENCY_CODE>\n      <!--Optional:-->\n      <INVOICE_DATE>string</INVOICE_DATE>\n      <!--Optional:-->\n      <INVOICE_ID>string</INVOICE_ID>\n      <!--Optional:-->\n      <INVOICE_NUM>string</INVOICE_NUM>\n      <!--Optional:-->\n      <INVOICE_RECEIVED_DATE>string</INVOICE_RECEIVED_DATE>\n      <!--Optional:-->\n      <INV_TYPE_LOOKUP_CODE>string</INV_TYPE_LOOKUP_CODE>\n      <!--Optional:-->\n      <OPERATION>string</OPERATION>\n      <!--Optional:-->\n      <PAYMENT_METHOD_LOOKUP_CODE>string</PAYMENT_METHOD_LOOKUP_CODE>\n      <!--Optional:-->\n      <PAY_GROUP_LOOKUP_CODE>string</PAY_GROUP_LOOKUP_CODE>\n      <!--Optional:-->\n      <PO_NUMBER>string</PO_NUMBER>\n      <!--Optional:-->\n      <PREPAY_APPLY_AMOUNT>string</PREPAY_APPLY_AMOUNT>\n      <!--Optional:-->\n      <PREPAY_DIST_NUM>string</PREPAY_DIST_NUM>\n      <!--Optional:-->\n      <PREPAY_GL_DATE>string</PREPAY_GL_DATE>\n      <!--Optional:-->\n      <PREPAY_NUM>string</PREPAY_NUM>\n      <!--Optional:-->\n      <SOURCE>string</SOURCE>\n      <!--Optional:-->\n      <SOURCE_SYSTEM>string</SOURCE_SYSTEM>\n      <!--Optional:-->\n      <STATUS>string</STATUS>\n      <!--Optional:-->\n      <TERMS_DATE>string</TERMS_DATE>\n      <!--Optional:-->\n      <TERMS_NAME>string</TERMS_NAME>\n      <!--Optional:-->\n      <VENDOR_NAME>string</VENDOR_NAME>\n      <!--Optional:-->\n      <VENDOR_NUM>string</VENDOR_NUM>\n      <!--Optional:-->\n      <VENDOR_SITE_CODE>string</VENDOR_SITE_CODE>\n      <!--Optional:-->\n      <VOUCHER_NUM>string</VOUCHER_NUM>\n    </APInvoiceHeader>\n  </arg0>\n</ap:APInvoiceData>",
+            "application/json" : "{\"APInvoiceData\":{\"arg0\":{\"APInvoiceHeader\":{\"ACCTS_PAY_CC_ID\":\"string\",\"APInvoiceLine\":{\"ACCOUNTING_DATE\":\"string\",\"ACCOUNT_SEGMENT\":\"string\",\"AMOUNT\":\"string\",\"AMOUNT_INCLUDES_TAX_FLAG\":\"string\",\"ASSESSABLE_VALUE\":\"string\",\"ASSETS_TRACKING_FLAG\":\"string\",\"ASSET_BOOK_TYPE_CODE\":\"string\",\"ASSET_CATEGORY_ID\":\"string\",\"ATTRIBUTE1\":\"string\",\"ATTRIBUTE10\":\"string\",\"ATTRIBUTE11\":\"string\",\"ATTRIBUTE12\":\"string\",\"ATTRIBUTE13\":\"string\",\"ATTRIBUTE14\":\"string\",\"ATTRIBUTE15\":\"string\",\"ATTRIBUTE2\":\"string\",\"ATTRIBUTE3\":\"string\",\"ATTRIBUTE4\":\"string\",\"ATTRIBUTE5\":\"string\",\"ATTRIBUTE6\":\"string\",\"ATTRIBUTE7\":\"string\",\"ATTRIBUTE8\":\"string\",\"ATTRIBUTE9\":\"string\",\"ATTRIBUTE_CATEGORY\":\"string\",\"AWT_GROUP_NAME\":\"string\",\"BALANCING_SEGMENT\":\"string\",\"CONTROL_AMOUNT\":\"string\",\"COST_CENTER_SEGMENT\":\"string\",\"COST_FACTOR_NAME\":\"string\",\"DEFAULT_DIST_CCID\":\"string\",\"DESCRIPTION\":\"string\",\"DISTRIBUTION_SET_NAME\":\"string\",\"DIST_CODE_CONCATENATED\":\"string\",\"EXPENDITURE_ITEM_DATE\":\"string\",\"EXPENDITURE_ORGANIZATION_ID\":\"string\",\"EXPENDITURE_TYPE\":\"string\",\"FINAL_MATCH_FLAG\":\"string\",\"INCL_IN_TAXABLE_LINE_FLAG\":\"string\",\"INVOICE_ID\":\"string\",\"INVOICE_LINE_ID\":\"string\",\"ITEM_DESCRIPTION\":\"string\",\"LINE_GROUP_NUMBER\":\"string\",\"LINE_NUMBER\":\"string\",\"LINE_TYPE_LOOKUP_CODE\":\"string\",\"MATCH_OPTION\":\"string\",\"OPERATION\":\"string\",\"PA_ADDITION_FLAG\":\"string\",\"PA_QUANTITY\":\"string\",\"PO_DISTRIBUTION_NUM\":\"string\",\"PO_LINE_NUMBER\":\"string\",\"PO_NUMBER\":\"string\",\"PO_SHIPMENT_NUM\":\"string\",\"PO_UNIT_OF_MEASURE\":\"string\",\"PRIMARY_INTENDED_USE\":\"string\",\"PROJECT_ACCOUNTING_CONTEXT\":\"string\",\"PROJECT_NAME\":\"string\",\"PROJECT_NUMBER\":\"string\",\"PRORATE_ACROSS_FLAG\":\"string\",\"PURCHASING_CATEGORY\":\"string\",\"PURCHASING_CATEGORY_ID\":\"string\",\"QUANTITY_INVOICED\":\"string\",\"RECEIPT_LINE_NUMBER\":\"string\",\"RECEIPT_NUMBER\":\"string\",\"RELEASE_NUM\":\"string\",\"REQUESTER_EMPLOYEE_NUM\":\"string\",\"REQUESTER_FIRST_NAME\":\"string\",\"REQUESTER_ID\":\"string\",\"REQUESTER_LAST_NAME\":\"string\",\"SHIP_TO_LOCATION_CODE\":\"string\",\"SHIP_TO_LOCATION_ID\":\"string\",\"SOURCE_SYSTEM\":\"string\",\"TASK_NAME\":\"string\",\"TASK_NUMBER\":\"string\",\"TAX_CODE\":\"string\",\"TAX_RATE_CODE\":\"string\",\"UNIT_PRICE\":\"string\"},\"ATTRIBUTE1\":\"string\",\"ATTRIBUTE10\":\"string\",\"ATTRIBUTE11\":\"string\",\"ATTRIBUTE12\":\"string\",\"ATTRIBUTE13\":\"string\",\"ATTRIBUTE14\":\"string\",\"ATTRIBUTE15\":\"string\",\"ATTRIBUTE2\":\"string\",\"ATTRIBUTE3\":\"string\",\"ATTRIBUTE4\":\"string\",\"ATTRIBUTE5\":\"string\",\"ATTRIBUTE6\":\"string\",\"ATTRIBUTE7\":\"string\",\"ATTRIBUTE8\":\"string\",\"ATTRIBUTE9\":\"string\",\"ATTRIBUTE_CATEGORY\":\"string\",\"AWT_GROUP_NAME\":\"string\",\"BATCH_ID\":\"string\",\"DESCRIPTION\":\"string\",\"DOC_CATEGORY_CODE\":\"string\",\"EXCHANGE_DATE\":\"string\",\"EXCHANGE_RATE\":\"string\",\"EXCHANGE_RATE_TYPE\":\"string\",\"EXTERNAL_BANK_ACCOUNT_NUM\":\"string\",\"GL_DATE\":\"string\",\"GOODS_RECEIVED_DATE\":\"string\",\"GROUP_ID\":\"string\",\"INVOICE_AMOUNT\":\"string\",\"INVOICE_CURRENCY_CODE\":\"string\",\"INVOICE_DATE\":\"string\",\"INVOICE_ID\":\"string\",\"INVOICE_NUM\":\"string\",\"INVOICE_RECEIVED_DATE\":\"string\",\"INV_TYPE_LOOKUP_CODE\":\"string\",\"OPERATION\":\"string\",\"PAYMENT_METHOD_LOOKUP_CODE\":\"string\",\"PAY_GROUP_LOOKUP_CODE\":\"string\",\"PO_NUMBER\":\"string\",\"PREPAY_APPLY_AMOUNT\":\"string\",\"PREPAY_DIST_NUM\":\"string\",\"PREPAY_GL_DATE\":\"string\",\"PREPAY_NUM\":\"string\",\"SOURCE\":\"string\",\"SOURCE_SYSTEM\":\"string\",\"STATUS\":\"string\",\"TERMS_DATE\":\"string\",\"TERMS_NAME\":\"string\",\"VENDOR_NAME\":\"string\",\"VENDOR_NUM\":\"string\",\"VENDOR_SITE_CODE\":\"string\",\"VOUCHER_NUM\":\"string\"}}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:APInvoiceDataResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <ERROR_CODE>string</ERROR_CODE>\n    <!--Optional:-->\n    <ERROR_MESSAGE>string</ERROR_MESSAGE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <LINE_NO>string</LINE_NO>\n    <!--Optional:-->\n    <TRANSACTION_NUMBER>string</TRANSACTION_NUMBER>\n  </return>\n</ap:APInvoiceDataResponse>",
+              "application/json" : "{\"APInvoiceDataResponse\":{\"return\":{\"ERROR_CODE\":\"string\",\"ERROR_MESSAGE\":\"string\",\"GROUP_ID\":\"string\",\"LINE_NO\":\"string\",\"TRANSACTION_NUMBER\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/RemovePFAIMSMasterData" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:RemovePFAIMSMasterData xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <LEG>string</LEG>\n    <!--Optional:-->\n    <POD_LK_DATE>string</POD_LK_DATE>\n    <!--Optional:-->\n    <TRIP_ID>string</TRIP_ID>\n  </arg0>\n</ap:RemovePFAIMSMasterData>",
+            "application/json" : "{\"RemovePFAIMSMasterData\":{\"arg0\":{\"LEG\":\"string\",\"POD_LK_DATE\":\"string\",\"TRIP_ID\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:RemovePFAIMSMasterDataResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <ERROR_CODE>string</ERROR_CODE>\n    <!--Optional:-->\n    <ERROR_MESSAGE>string</ERROR_MESSAGE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <LINE_NO>string</LINE_NO>\n    <!--Optional:-->\n    <TRANSACTION_NUMBER>string</TRANSACTION_NUMBER>\n  </return>\n</ap:RemovePFAIMSMasterDataResponse>",
+              "application/json" : "{\"RemovePFAIMSMasterDataResponse\":{\"return\":{\"ERROR_CODE\":\"string\",\"ERROR_MESSAGE\":\"string\",\"GROUP_ID\":\"string\",\"LINE_NO\":\"string\",\"TRANSACTION_NUMBER\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/PFAIMSMasterData" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:PFAIMSMasterData xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Zero or more repetitions:-->\n    <PFAIMSMasterData>\n      <!--Optional:-->\n      <AIRCRAFT>string</AIRCRAFT>\n      <!--Optional:-->\n      <BLOCK_IN>string</BLOCK_IN>\n      <!--Optional:-->\n      <BLOCK_OUT>string</BLOCK_OUT>\n      <!--Optional:-->\n      <BLOCK_TIME_HT>string</BLOCK_TIME_HT>\n      <!--Optional:-->\n      <CAT1>string</CAT1>\n      <!--Optional:-->\n      <CREW_ID_1>string</CREW_ID_1>\n      <!--Optional:-->\n      <CREW_ID_10>string</CREW_ID_10>\n      <!--Optional:-->\n      <CREW_ID_11>string</CREW_ID_11>\n      <!--Optional:-->\n      <CREW_ID_12>string</CREW_ID_12>\n      <!--Optional:-->\n      <CREW_ID_13>string</CREW_ID_13>\n      <!--Optional:-->\n      <CREW_ID_14>string</CREW_ID_14>\n      <!--Optional:-->\n      <CREW_ID_15>string</CREW_ID_15>\n      <!--Optional:-->\n      <CREW_ID_16>string</CREW_ID_16>\n      <!--Optional:-->\n      <CREW_ID_17>string</CREW_ID_17>\n      <!--Optional:-->\n      <CREW_ID_18>string</CREW_ID_18>\n      <!--Optional:-->\n      <CREW_ID_19>string</CREW_ID_19>\n      <!--Optional:-->\n      <CREW_ID_2>string</CREW_ID_2>\n      <!--Optional:-->\n      <CREW_ID_20>string</CREW_ID_20>\n      <!--Optional:-->\n      <CREW_ID_21>string</CREW_ID_21>\n      <!--Optional:-->\n      <CREW_ID_22>string</CREW_ID_22>\n      <!--Optional:-->\n      <CREW_ID_23>string</CREW_ID_23>\n      <!--Optional:-->\n      <CREW_ID_24>string</CREW_ID_24>\n      <!--Optional:-->\n      <CREW_ID_25>string</CREW_ID_25>\n      <!--Optional:-->\n      <CREW_ID_26>string</CREW_ID_26>\n      <!--Optional:-->\n      <CREW_ID_27>string</CREW_ID_27>\n      <!--Optional:-->\n      <CREW_ID_28>string</CREW_ID_28>\n      <!--Optional:-->\n      <CREW_ID_29>string</CREW_ID_29>\n      <!--Optional:-->\n      <CREW_ID_3>string</CREW_ID_3>\n      <!--Optional:-->\n      <CREW_ID_30>string</CREW_ID_30>\n      <!--Optional:-->\n      <CREW_ID_4>string</CREW_ID_4>\n      <!--Optional:-->\n      <CREW_ID_5>string</CREW_ID_5>\n      <!--Optional:-->\n      <CREW_ID_6>string</CREW_ID_6>\n      <!--Optional:-->\n      <CREW_ID_7>string</CREW_ID_7>\n      <!--Optional:-->\n      <CREW_ID_8>string</CREW_ID_8>\n      <!--Optional:-->\n      <CREW_ID_9>string</CREW_ID_9>\n      <!--Optional:-->\n      <CREW_NO>string</CREW_NO>\n      <!--Optional:-->\n      <FLIGHT_HOURS>string</FLIGHT_HOURS>\n      <!--Optional:-->\n      <FUEL_FUELER>string</FUEL_FUELER>\n      <!--Optional:-->\n      <FUEL_PURCH_DATE>string</FUEL_PURCH_DATE>\n      <!--Optional:-->\n      <FUEL_QTY>string</FUEL_QTY>\n      <!--Optional:-->\n      <FUEL_VENDOR>string</FUEL_VENDOR>\n      <!--Optional:-->\n      <LEG>string</LEG>\n      <!--Optional:-->\n      <PAX>string</PAX>\n      <!--Optional:-->\n      <POA>string</POA>\n      <!--Optional:-->\n      <POD>string</POD>\n      <!--Optional:-->\n      <POD_LK_DATE>string</POD_LK_DATE>\n      <!--Optional:-->\n      <TRIP_ID>string</TRIP_ID>\n    </PFAIMSMasterData>\n  </arg0>\n</ap:PFAIMSMasterData>",
+            "application/json" : "{\"PFAIMSMasterData\":{\"arg0\":{\"PFAIMSMasterData\":{\"AIRCRAFT\":\"string\",\"BLOCK_IN\":\"string\",\"BLOCK_OUT\":\"string\",\"BLOCK_TIME_HT\":\"string\",\"CAT1\":\"string\",\"CREW_ID_1\":\"string\",\"CREW_ID_10\":\"string\",\"CREW_ID_11\":\"string\",\"CREW_ID_12\":\"string\",\"CREW_ID_13\":\"string\",\"CREW_ID_14\":\"string\",\"CREW_ID_15\":\"string\",\"CREW_ID_16\":\"string\",\"CREW_ID_17\":\"string\",\"CREW_ID_18\":\"string\",\"CREW_ID_19\":\"string\",\"CREW_ID_2\":\"string\",\"CREW_ID_20\":\"string\",\"CREW_ID_21\":\"string\",\"CREW_ID_22\":\"string\",\"CREW_ID_23\":\"string\",\"CREW_ID_24\":\"string\",\"CREW_ID_25\":\"string\",\"CREW_ID_26\":\"string\",\"CREW_ID_27\":\"string\",\"CREW_ID_28\":\"string\",\"CREW_ID_29\":\"string\",\"CREW_ID_3\":\"string\",\"CREW_ID_30\":\"string\",\"CREW_ID_4\":\"string\",\"CREW_ID_5\":\"string\",\"CREW_ID_6\":\"string\",\"CREW_ID_7\":\"string\",\"CREW_ID_8\":\"string\",\"CREW_ID_9\":\"string\",\"CREW_NO\":\"string\",\"FLIGHT_HOURS\":\"string\",\"FUEL_FUELER\":\"string\",\"FUEL_PURCH_DATE\":\"string\",\"FUEL_QTY\":\"string\",\"FUEL_VENDOR\":\"string\",\"LEG\":\"string\",\"PAX\":\"string\",\"POA\":\"string\",\"POD\":\"string\",\"POD_LK_DATE\":\"string\",\"TRIP_ID\":\"string\"}}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:PFAIMSMasterDataResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <ERROR_CODE>string</ERROR_CODE>\n    <!--Optional:-->\n    <ERROR_MESSAGE>string</ERROR_MESSAGE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <LINE_NO>string</LINE_NO>\n    <!--Optional:-->\n    <TRANSACTION_NUMBER>string</TRANSACTION_NUMBER>\n  </return>\n</ap:PFAIMSMasterDataResponse>",
+              "application/json" : "{\"PFAIMSMasterDataResponse\":{\"return\":{\"ERROR_CODE\":\"string\",\"ERROR_MESSAGE\":\"string\",\"GROUP_ID\":\"string\",\"LINE_NO\":\"string\",\"TRANSACTION_NUMBER\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/GetSuppliers" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetSuppliers xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_TYPE>string</VENDOR_TYPE>\n  </arg0>\n</ap:GetSuppliers>",
+            "application/json" : "{\"GetSuppliers\":{\"arg0\":{\"VENDOR_NUMBER\":\"string\",\"VENDOR_TYPE\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetSuppliersResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <ADDRESS_LINE1>string</ADDRESS_LINE1>\n    <!--Optional:-->\n    <ADDRESS_LINE2>string</ADDRESS_LINE2>\n    <!--Optional:-->\n    <ADDRESS_LINE3>string</ADDRESS_LINE3>\n    <!--Optional:-->\n    <AREA_CODE>string</AREA_CODE>\n    <!--Optional:-->\n    <CITY>string</CITY>\n    <!--Optional:-->\n    <COUNTRY>string</COUNTRY>\n    <!--Optional:-->\n    <EMAIL>string</EMAIL>\n    <!--Optional:-->\n    <FAX>string</FAX>\n    <!--Optional:-->\n    <FAX_AREA_CODE>string</FAX_AREA_CODE>\n    <!--Optional:-->\n    <MOBILE>string</MOBILE>\n    <!--Optional:-->\n    <PHONE>string</PHONE>\n    <!--Optional:-->\n    <VENDOR_ID>string</VENDOR_ID>\n    <!--Optional:-->\n    <VENDOR_NAME>string</VENDOR_NAME>\n    <!--Optional:-->\n    <VENDOR_NAME_ALT>string</VENDOR_NAME_ALT>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_SITE_CODE>string</VENDOR_SITE_CODE>\n    <!--Optional:-->\n    <VENDOR_TYPE>string</VENDOR_TYPE>\n  </return>\n</ap:GetSuppliersResponse>",
+              "application/json" : "{\"GetSuppliersResponse\":{\"return\":{\"ADDRESS_LINE1\":\"string\",\"ADDRESS_LINE2\":\"string\",\"ADDRESS_LINE3\":\"string\",\"AREA_CODE\":\"string\",\"CITY\":\"string\",\"COUNTRY\":\"string\",\"EMAIL\":\"string\",\"FAX\":\"string\",\"FAX_AREA_CODE\":\"string\",\"MOBILE\":\"string\",\"PHONE\":\"string\",\"VENDOR_ID\":\"string\",\"VENDOR_NAME\":\"string\",\"VENDOR_NAME_ALT\":\"string\",\"VENDOR_NUMBER\":\"string\",\"VENDOR_SITE_CODE\":\"string\",\"VENDOR_TYPE\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/GetInvoiceDetails" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetInvoiceDetails xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Optional:-->\n  <arg0>\n    <!--Optional:-->\n    <FROM_DATE>string</FROM_DATE>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <INVOICE_NUM>string</INVOICE_NUM>\n    <!--Optional:-->\n    <TO_DATE>string</TO_DATE>\n    <!--Optional:-->\n    <VENDOR_NUM>string</VENDOR_NUM>\n    <!--Optional:-->\n    <VOUCHER_NUM>string</VOUCHER_NUM>\n  </arg0>\n</ap:GetInvoiceDetails>",
+            "application/json" : "{\"GetInvoiceDetails\":{\"arg0\":{\"FROM_DATE\":\"string\",\"GROUP_ID\":\"string\",\"INVOICE_NUM\":\"string\",\"TO_DATE\":\"string\",\"VENDOR_NUM\":\"string\",\"VOUCHER_NUM\":\"string\"}}}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetInvoiceDetailsResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <AMOUNT_PAID>string</AMOUNT_PAID>\n    <!--Optional:-->\n    <GROUP_ID>string</GROUP_ID>\n    <!--Optional:-->\n    <INVOICE_AMOUNT>string</INVOICE_AMOUNT>\n    <!--Optional:-->\n    <INVOICE_CURRENCY_CODE>string</INVOICE_CURRENCY_CODE>\n    <!--Optional:-->\n    <INVOICE_DATE>string</INVOICE_DATE>\n    <!--Optional:-->\n    <INVOICE_ID>string</INVOICE_ID>\n    <!--Optional:-->\n    <INVOICE_NUM>string</INVOICE_NUM>\n    <!--Optional:-->\n    <INVOICE_TYPE_LOOKUP_CODE>string</INVOICE_TYPE_LOOKUP_CODE>\n    <!--Optional:-->\n    <PAYMENT_STATUS>string</PAYMENT_STATUS>\n    <!--Optional:-->\n    <STATUS>string</STATUS>\n    <!--Optional:-->\n    <VALIDATION_STATUS>string</VALIDATION_STATUS>\n    <!--Optional:-->\n    <VENDOR_NUMBER>string</VENDOR_NUMBER>\n    <!--Optional:-->\n    <VENDOR_SITE_CODE>string</VENDOR_SITE_CODE>\n    <!--Optional:-->\n    <VOUCHER_NUM>string</VOUCHER_NUM>\n  </return>\n</ap:GetInvoiceDetailsResponse>",
+              "application/json" : "{\"GetInvoiceDetailsResponse\":{\"return\":{\"AMOUNT_PAID\":\"string\",\"GROUP_ID\":\"string\",\"INVOICE_AMOUNT\":\"string\",\"INVOICE_CURRENCY_CODE\":\"string\",\"INVOICE_DATE\":\"string\",\"INVOICE_ID\":\"string\",\"INVOICE_NUM\":\"string\",\"INVOICE_TYPE_LOOKUP_CODE\":\"string\",\"PAYMENT_STATUS\":\"string\",\"STATUS\":\"string\",\"VALIDATION_STATUS\":\"string\",\"VENDOR_NUMBER\":\"string\",\"VENDOR_SITE_CODE\":\"string\",\"VOUCHER_NUM\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    },
+    "/GetInstanceDetails" : {
+      "post" : {
+        "consumes" : [ "application/json", "application/xml" ],
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "x-examples" : {
+            "application/xml" : "<ap:GetInstanceDetails xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\"/>",
+            "application/json" : "{\"GetInstanceDetails\":\"\"}"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "schema" : {
+              "type" : "object"
+            },
+            "examples" : {
+              "application/xml" : "<ap:GetInstanceDetailsResponse xmlns:ap=\"http://ap.ws.apps.oracle.xxdof/\">\n  <!--Zero or more repetitions:-->\n  <return>\n    <!--Optional:-->\n    <INSTANCE_NAME>string</INSTANCE_NAME>\n  </return>\n</ap:GetInstanceDetailsResponse>",
+              "application/json" : "{\"GetInstanceDetailsResponse\":{\"return\":{\"INSTANCE_NAME\":\"string\"}}}"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "apiKey" : {
+      "type" : "apiKey",
+      "name" : "Accept-Language",
+      "in" : "header"
+    }
+  }
+}
